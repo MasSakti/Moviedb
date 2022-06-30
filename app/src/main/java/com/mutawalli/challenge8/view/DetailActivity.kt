@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
@@ -48,6 +49,7 @@ fun DisplayDetail(movie: Movie) {
     val posterBaseUrl = "https://image.tmdb.org/t/p/w500/"
     Column(
         modifier = Modifier
+            .background(Color(0xFFE6DFCF))
             .verticalScroll(rememberScrollState())
     ) {
         Image(

@@ -47,7 +47,9 @@ class RegisterActivity : ComponentActivity() {
             Challenge8 {
                 // A surface container using the 'background' color from the theme
                 Surface(
-                    modifier = Modifier.fillMaxSize(),
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .background(Color(0xFFE6DFCF)),
                     color = MaterialTheme.colors.background
                 ) {
                     DisplayRegisterUserInterface()
@@ -75,6 +77,7 @@ fun DisplayRegisterUserInterface() {
     Column(
         modifier = Modifier
             .fillMaxWidth()
+            .background(Color(0xFFE6DFCF))
             .padding(10.dp)
             .verticalScroll(rememberScrollState())
     ) {

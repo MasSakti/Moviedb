@@ -7,6 +7,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.GridCells
@@ -48,7 +49,9 @@ class MainActivity : ComponentActivity() {
             Challenge8 {
                 // A surface container using the 'background' color from the theme
                 Surface(
-                    modifier = Modifier.fillMaxSize(),
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .background(Color(0xFFE6DFCF)),
                     color = MaterialTheme.colors.background
                 ) {
                     val viewModelMovie = viewModel(modelClass = MovieViewModel::class.java)
@@ -175,7 +178,9 @@ fun CommonDialog(
 fun DisplayFilmList(movie: Movie) {
     val posterBaseUrl = "https://image.tmdb.org/t/p/w500/"
     val mContext = LocalContext.current
-    Column(modifier = Modifier.padding(3.dp)) {
+    Column(modifier = Modifier
+        .padding(3.dp)
+        .background(Color(0xFFE6DFCF))) {
         Card(
             shape = RoundedCornerShape(15.dp),
             modifier = Modifier

@@ -1,4 +1,4 @@
-package com.mutawalli.challenge8.dependency_injection
+package com.mutawalli.challenge8.di
 
 import com.mutawalli.challenge8.networking.ApiServices
 import dagger.Module
