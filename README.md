@@ -1,4 +1,4 @@
-# Challenge-Chapter-8
+# Moviedb Apps
 
 <img src="app/src/main/res/drawable/logo.png" align="left"
 width="240" hspace="10" vspace="10">
